@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    margin: 0 120px;
+    padding: 16px 48px;
+    
+}
+
+.burger_logo{
+    margin-top: 0px;
+    width: 75px;
+}
+
+.navbar_store{
+    width: 22px;
+    padding-top: 2px;
+}
+
+.fa-solid {
+    padding-top: 8px;
+}
+
+.navbar_contact{
+    width: 18px;
+}
+
+.navbar_cart{
+    width: 20px;
+}
+
+.search_bar{
+    margin-top: 10px;
+    width: 25px;
+}
+
+.navbar__menu_container{
+    display: flex;
+    gap: 110px;
+}
+
+.navbar a{
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#EE7700
+}
+
+.hero_section{
+    background: url(https://d1rgpf387mknul.cloudfront.net/products/Home/web/1x_web_20240528015849108554_1440x300gif);
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+}
+
+@media only screen and (max-width:600px){
+    .navbar__menu_container{
+        display:none;
+    }
+    .hero_section{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+}
+
+.menu_section{
+    background-color:wheat;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding:0px 40px;
+
+}
+
+.menu_section a{
+    color: black;
+    text-decoration: none;
+}
+
+.menu_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0 2.4rem;
+    margin: 0 50px;
+    
+}
+
+.menu_heading h4{
+    color:#EE7700;
+    cursor: pointer;
+}
+
+.menu_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 22px;
+    text-align: center;
+}
+
+.menu_content i{
+    cursor: pointer;
+}
+
+.card_section{
+    background-color: lightgray;
+    display:flex;
+    flex-direction: column;
+}
+
+.card_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 22px;
+}
+
+.card_content a{
+    width: 20px;
+}
+
+.seclast_section button{
+    color: white;
+    background-color: #EE7700;
+    padding: 10px 70px;
+    margin: 5% 38%;
+    border-radius: 25px;
+    border-color: #EE7700;
+    box-shadow:none;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.seclast_section h6{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.seclast_section img{
+    margin-left: 13%;
+    background-color: wheat;
+    border-radius: 6px;
+}
+
+
+
+.footer{
+    width: 100%;
+    background-color: #323231;
+    padding: 43px 0 ;
+}
+
+.navigation_conatainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    /* align-items: center; */
+    justify-content: space-around;
+    gap: 5rem;
+    margin: auto;
+    padding: 0 0 30px;
+}
+
+.link_container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 2rem 0;
+}
+
+.link_container h5{
+    color: #FFFFFF;
+    margin-bottom: 13px;
+    font-size: 16px;
+}
+
+.link_container a{
+    text-decoration: none;
+    color: lightgray;
+    font-size: small;
+    font-weight: 400;
+
+}
+
+
+hr {
+    display: block;
+    width: 90%;
+    margin: auto;
+    size: 10px;
+}
+
+.footer_bottom{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin-top: 20px;
+
+}
+
+.footer_bottom h5{
+    color: #FFFFFF;
+}
+
+
+/* Base styles: Large screens (desktops) */
+
+/* Medium screens: Tablets (up to 900px) */
+@media only screen and (max-width: 900px) {
+    .navbar {
+        margin: 0 60px;
+        padding: 12px 36px;
+    }
+
+    .navbar__menu_container {
+        gap: 60px;
+    }
+
+    .hero_section {
+        min-height: 50vh;
+    }
+
+    .menu_heading {
+        margin: 0 30px;
+    }
+
+    .seclast_section button {
+        padding: 8px 50px;
+        margin: 5% 30%;
+        font-size: 18px;
+    }
+
+    .navigation_container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .footer_bottom h5 {
+        font-size: 14px;
+    }
+}
+
+/* Small screens: Smartphones (up to 600px) */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        margin: 0 20px;
+        padding: 8px 20px;
+    }
+
+    .navbar__menu_container {
+        display: none; /* Hide the menu */
+    }
+
+    .hero_section {
+        background-position: center;
+        min-height: 40vh;
+    }
+
+    .menu_section {
+        padding: 0px 20px;
+    }
+
+    .menu_heading {
+        margin: 0 10px;
+        padding: 2rem 0 1.5rem;
+    }
+
+    .menu_content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card_content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .seclast_section button {
+        padding: 8px 40px;
+        margin: 5% 20%;
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+/* Extra small screens: Small smartphones (up to 400px) */
+@media only screen and (max-width: 400px) {
+    .navbar {
+        margin: 0 10px;
+        padding: 8px 15px;
+    }
+
+    .hero_section {
+        background-position: center;
+        min-height: 30vh;
+    }
+
+    .menu_heading {
+        margin: 0 5px;
+        padding: 1.5rem 0 1rem;
+    }
+
+    .menu_content {
+        gap: 10px;
+    }
+
+    .card_content {
+        gap: 10px;
+    }
+
+    .seclast_section button {
+        padding: 6px 30px;
+        margin: 5% 15%;
+        font-size: 14px;
+    }
+
+    .navigation_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footer_bottom h5 {
+        font-size: 12px;
+    }
+}
+
+/* Ultra small screens: Tiny smartphones (up to 300px) */
+@media only screen and (max-width: 300px) {
+    .navbar {
+        margin: 0 5px;
+        padding: 6px 10px;
+    }
+
+    .hero_section {
+        min-height: 20vh;
+    }
+
+    .menu_content {
+        gap: 5px;
+    }
+
+    .card_content {
+        gap: 5px;
+    }
+
+    .seclast_section button {
+        padding: 4px 20px;
+        margin: 5% 10%;
+        font-size: 12px;
+    }
+
+    .navigation_container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}
+
